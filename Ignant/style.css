@@ -1,0 +1,491 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Redressed', cursive;
+}
+
+/*Nav*/
+.navbar{
+    width: 95%;
+    margin: auto;
+    height: 8vh;
+    display: flex;
+    z-index: 1;
+    background: #fff;
+    transition: all .5s ease;
+}
+.navbar .nav-container{
+    position: fixed;
+    width: 95%;
+    margin: auto;
+    height:8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(218, 217, 217);
+    z-index: 1;
+    background: #fff;
+    transition: all .5s ease;
+}
+.navbar .open-menu{
+  display: flex;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.navbar .close-menu{
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+.navbar .logo a{
+   text-decoration: none;
+   color: #111;
+   font-size: 1.5rem;
+}
+.navbar .search{
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: lighter;
+}
+#links{
+    position: sticky;
+    width: 95%;
+    margin: auto;
+    height: 10vh;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: top .5s ease-in-out;
+}
+#links .nav-links{
+    display: flex;
+}
+#links .nav-links li{
+    list-style: none;
+    padding: 1rem;
+}
+#links .nav-links li a{
+    text-decoration: none;
+    color: #111;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+#links .nav-links li a:hover, .links .nav-links li a:focus{
+    text-decoration: underline;
+}
+
+/*Home*/
+.home{
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.row .column-1{
+    width: 50%;
+}
+.row .column-1 img{
+    width: 100%;
+}
+.row .column-2{
+    width: 50%;
+    background: rgb(247, 249, 250);
+}
+.column-2 .home-links{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.column-2 .home-links li{
+    list-style: none;
+}
+.column-2 .home-links li a{
+    text-decoration: none;
+    color: #111;
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+.column-2 .title{
+    text-align: center;
+    margin-top: 2rem;
+}
+.column-2 .title a{
+    text-decoration: none;
+    color: #111;
+    font-size: 2rem;
+}
+.column-2 .text{
+    text-align: center;
+    margin-top: 2rem;
+}
+.column-2 .more{
+    text-align: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.column-2 .more button{
+    border: 1px solid rgb(173, 173, 173);
+    outline: none;
+    cursor: pointer;
+    padding: 1rem 2.5rem;
+    background: none;
+}
+
+/*Hide page*/
+.home-hide{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: none; /*display:block; >>JS*/
+    background: #fff;
+}
+.home-hide .row{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.home-hide .row .column{
+    display: block;
+}
+.home-hide .row .column .title{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+.home-hide .row .column .title a{
+    text-decoration: none;
+    color: #111;
+}
+.home-hide .row .column .home-links{
+    display: block;
+
+}
+.home-hide .row .column .home-links li{
+    list-style: none;
+    margin: 2rem 0;
+}
+.home-hide .row .column .home-links li a{
+    text-decoration: none;
+    color: gray;
+    transition: 0.25s ease-in-out;
+}
+.home-hide .row .column .home-links li a:hover{
+    color: #111;
+}
+.home-hide .bottom-links{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    justify-content: space-between;
+}
+.home-hide .bottom-links .bottom-links-2{
+    display: flex;
+}
+.home-hide .bottom-links .bottom-links-2 li{
+    margin: 1rem;
+    list-style: none;
+}
+.home-hide .bottom-links .bottom-links-2 li a{
+    text-decoration: none;
+    color: gray;
+}
+.home-hide .bottom-links .icons{
+    margin: 1rem;
+}
+.home-hide .bottom-links .icons span{
+    margin: 1rem;
+    color: gray;
+}
+
+/*Carousel*/
+.carousel{
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+.carousel .title{
+    display: flex;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    z-index: -1;
+}
+.carousel .title p{
+   text-transform: uppercase;
+   color:#111;
+   font-size: 1.5rem;
+}
+.carousel .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 70vh;
+    grid-column-gap: 5rem;
+}
+.grid-container .item-1 img{
+    cursor: pointer;
+    object-fit: cover;
+    width: 100%;
+    height: 50%;
+}
+.grid-container .item-1 .sm-links{
+    display: flex;
+    margin: 1rem 0;
+}
+.grid-container .item-1 .sm-links a{
+    text-decoration: none;
+    color: #111;
+    margin-right:1rem;
+}
+.grid-container .item-1 .sm-links a:hover{
+    text-decoration: underline;
+}
+.grid-container .item-1 .b-link a{
+    text-decoration: none;
+    color: #111;
+    font-size: 1.5rem;
+}
+.grid-container .item-2 img{
+    cursor: pointer;
+    object-fit: cover;
+    width: 100%;
+    height: 50%;
+}
+.grid-container .item-2 .sm-links{
+    display: flex;
+    margin: 1rem 0;
+}
+.grid-container .item-2 .sm-links a{
+    text-decoration: none;
+    color: #111;
+    margin-right:1rem;
+}
+.grid-container .item-2 .sm-links a:hover{
+    text-decoration: underline;
+}
+.grid-container .item-2 .b-link a{
+    text-decoration: none;
+    color: #111;
+    font-size: 1.5rem;
+}
+.grid-container .item-3 img{
+    cursor: pointer;
+    object-fit: cover;
+    width: 100%;
+    height: 50%;
+}
+.grid-container .item-3 .sm-links{
+    display: flex;
+    margin: 1rem 0;
+}
+.grid-container .item-3 .sm-links a{
+    text-decoration: none;
+    color: #111;
+    margin-right:1rem;
+}
+.grid-container .item-3 .sm-links a:hover{
+    text-decoration: underline;
+}
+.grid-container .item-3 .b-link a{
+    text-decoration: none;
+    color: #111;
+    font-size: 1.5rem;
+}
+.grid-container .more{
+    display: block;
+}
+.grid-container .more button{
+    outline: none;
+    background: none;
+    border: 1px solid rgb(173, 173, 173);
+    padding: 1rem 4rem;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+/*Newsletter*/
+.section3{
+    width: 95%;
+    margin: auto;
+    height: 50vh;
+    background: rgb(240, 243, 247);
+    margin-top: 4rem;
+}
+.section3 .row{
+    width: 100%;
+    display: flex;
+}
+.section3 .row .column{
+    width: 50%;
+}
+.row .column .title{
+    text-align: center;
+    align-items: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 2rem;
+}
+.row .column .subscribe{
+    text-align: center;
+}
+.row .column .subscribe p{
+    font-size: 2rem;
+    margin: 2rem;
+}
+.row .column .subscribe input[type=text]{
+    width: 30%;
+    height: 5vh;
+    padding: 1rem;
+    outline: none;
+    border: 1px solid rgb(168, 166, 166);
+    background: none;
+}
+.row .column .subscribe button{
+    height: 5vh;
+    padding:0 1.5rem;
+    outline: none;
+    border: 1px solid rgb(168, 166, 166);
+    background: none;
+    cursor: pointer;
+}
+.row .column .icons{
+    text-align: center;
+    display:grid;
+    cursor: pointer;
+}
+.row .column .icons span{
+    padding: 1rem;
+    color: gray;
+}
+.row .column .icons span:hover{
+    color: #000000;
+}
+
+/*Edit*/
+.editorials{
+    width: 80%;
+    margin: auto;
+    display: block;
+    margin-top: 3rem;
+}
+.editorials .title{
+    font-size: 2rem;
+    margin: 2rem;
+    text-align: center;
+}
+
+/*Fixed*/
+.fixed{
+    width: 95%;
+    height: 100vh;
+    margin: auto;
+    margin-top: 3rem;
+    background-image: url(./Images/pexels-tima-miroshnichenko-6827250-min.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.fixed .title{
+ text-align: center;
+ font-size: 2rem;
+ text-transform: uppercase;
+ color: #fff;
+}
+.fixed .more{
+    text-align: center;
+    margin: 4rem;
+}
+.fixed .more button{
+    font-size: 2rem;
+    padding: 1rem 3rem;
+    background: none;
+    outline: none;
+    border: 2px solid rgb(172, 166, 166);
+    color: #fff;
+}
+
+/*Footer*/
+.footer{
+    width: 95%;
+    height: 10vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer .icons span{
+    margin:0 1rem;
+    cursor: pointer;
+}
+.footer .footer-links{
+    display: flex;
+}
+.footer .footer-links li{
+    list-style: none;
+}
+.footer .footer-links li a{
+    text-decoration: none;
+    color: #111;
+    margin: 0 1rem;
+}
+
+/*Responsive*/
+@media (max-width:900px){
+    #links{
+        display: none;
+    }
+    .home .row{
+        display: block;
+    }
+    .home .row .column-1{
+        width: 100%;
+    }
+    .home .row .column-2{
+        width: 100%;
+    }
+    .carousel .grid-container{
+        display: block;
+    }
+    .section3{
+        height: 100vh;
+    }
+    .section3 .row {
+        display: block;
+    }
+    .section3 .row .column{
+        width: 100%;
+    }
+    .editorials .row{
+        display: block;
+    }
+    .fixed{
+        background-size:cover;
+        background-position: center;
+    }
+    .editorials .row .column-1{
+        width: 100%;
+    }
+    .editorials .row .column-2{
+        width: 100%;
+    }
+    .footer{
+        display: block;
+        margin: 2rem 0;
+    }
+    .footer .icons{
+        margin: 1rem 0;
+        text-align: center;
+    }
+    .footer .footer-links{
+        margin: 1rem 0;
+        justify-content: center;
+    }
+}
