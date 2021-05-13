@@ -1,0 +1,15 @@
+input[type=text]{
+    position: fixed;
+    display: none;
+    width: 90%;
+    margin: auto;
+    height: 10vh;
+    text-align: center;
+    font-size: 2rem;
+    background: #fff;
+    border-bottom: 3px solid #111;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+}
