@@ -8,6 +8,7 @@ $(".open-menu").on('click', function(){
     $(this).css("display", "none");   
     $(".close-menu").css("display", "flex");  
 });
+
 $(".close-menu").on('click', function(){
     $(".home").show();
     $("#links").slideDown("slow");
@@ -15,6 +16,9 @@ $(".close-menu").on('click', function(){
     $(".open-menu").css("display", "flex");   
     $(this).css("display", "none");  
 });
+
+
+
  
 
     /*Change nav-style on scroll*/

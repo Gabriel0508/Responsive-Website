@@ -77,6 +77,9 @@
 #links .nav-links li a:hover, .links .nav-links li a:focus{
     text-decoration: underline;
 }
+.search{
+    cursor: pointer;
+}
 
 /*Home*/
 .home{
@@ -138,14 +141,37 @@
     cursor: pointer;
     padding: 1rem 2.5rem;
     background: none;
+    transition: all .25s ease-in-out;
+}
+.column-2 .more button:hover{
+    background-color: #111;
+    color: #fff;
+}
+
+/*Search*/
+.search-page{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: none;
+}
+.search-container{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: none;
+}
+.stop{
+    display: none;
+    
 }
 
 /*Hide page*/
 .home-hide{
     position: fixed;
+    margin: auto;
     width: 100%;
     height: 100%;
-    margin: auto;
     display: none; /*display:block; >>JS*/
     background: #fff;
 }
@@ -158,10 +184,10 @@
 }
 .home-hide .row .column{
     display: block;
+    text-align: center;
 }
 .home-hide .row .column .title{
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
+    font-size: 2rem;
 }
 .home-hide .row .column .title a{
     text-decoration: none;
@@ -193,15 +219,16 @@
     display: flex;
 }
 .home-hide .bottom-links .bottom-links-2 li{
-    margin: 1rem;
+    margin-right: 1rem;
     list-style: none;
 }
 .home-hide .bottom-links .bottom-links-2 li a{
     text-decoration: none;
-    color: gray;
+    color: gray;   
 }
 .home-hide .bottom-links .icons{
-    margin: 1rem;
+    margin-left: 1rem;
+    cursor: pointer;
 }
 .home-hide .bottom-links .icons span{
     margin: 1rem;
@@ -236,6 +263,10 @@
     object-fit: cover;
     width: 100%;
     height: 50%;
+    transition: all .25s ease-in-out;
+}
+.grid-container .item-1 img:hover{
+    transform: scale(1.1);
 }
 .grid-container .item-1 .sm-links{
     display: flex;
@@ -259,6 +290,10 @@
     object-fit: cover;
     width: 100%;
     height: 50%;
+    transition: all .25s ease-in-out;
+}
+.grid-container .item-2 img:hover{
+    transform: scale(1.1);
 }
 .grid-container .item-2 .sm-links{
     display: flex;
@@ -282,6 +317,10 @@
     object-fit: cover;
     width: 100%;
     height: 50%;
+    transition: all .25s ease-in-out;
+}
+.grid-container .item-3 img:hover{
+    transform: scale(1.1);
 }
 .grid-container .item-3 .sm-links{
     display: flex;
@@ -392,12 +431,14 @@
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+    display: block;
 }
 .fixed .title{
  text-align: center;
  font-size: 2rem;
  text-transform: uppercase;
  color: #fff;
+ padding-top: 40vh;
 }
 .fixed .more{
     text-align: center;
@@ -410,6 +451,12 @@
     outline: none;
     border: 2px solid rgb(172, 166, 166);
     color: #fff;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+.fixed .more button:hover{
+    background-color: #fff;
+    color: #111;
 }
 
 /*Footer*/
@@ -439,6 +486,7 @@
 
 /*Responsive*/
 @media (max-width:900px){
+    
     #links{
         display: none;
     }
