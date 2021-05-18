@@ -1,0 +1,77 @@
+.explore {
+  display: flex;
+  width: 100%;
+  .explore-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    .one {
+      display: block;
+      margin: auto;
+      div {
+        width: 300px;
+        height: 10vh;
+        background: #111;
+        color: #fff;
+        margin-top: 2rem;
+        margin-right: 2rem;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        justify-content: flex-start;
+        text-align: center;
+
+      }
+    }
+    .two {
+      display: block;
+      margin: auto;
+      div {
+        width: 300px;
+        height: 10vh;
+        background: #111;
+        color: #fff;
+        margin-top: 2rem;
+        margin-right: 2rem;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        justify-content: flex-start;
+        text-align: center;
+
+      }
+    }
+    .three {
+      display: block;
+      margin: auto;
+      div {
+        width: 300px;
+        height: 10vh;
+        background: #111;
+        color: #fff;
+        margin-top: 2rem;
+        margin-right: 2rem;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        justify-content: flex-start;
+        text-align: center;
+
+      }
+    }
+    .four {
+      display: block;
+      margin: auto;
+      align-items: center;
+      div {
+        width: 300px;
+        height: 10vh;
+        background: #111;
+        color: #fff;
+        margin-top: 2rem;
+        font-size: 2rem;
+        text-align: center;
+      }
+    }
+  }
+}

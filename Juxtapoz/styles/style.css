@@ -98,17 +98,6 @@
   background: #fff;
   border-right: 5px solid #111;
   z-index: 1;
-  /*
-    ::-webkit-scrollbar {
-        width: 10px;
-      }
-      ::-webkit-scrollbar-track {
-        background: #242526;
-      }
-      ::-webkit-scrollbar-thumb {
-        background: #3A3B3C;
-      }
-      */
 }
 
 .side-bar .close-menu {
@@ -159,7 +148,8 @@
 input[type=text] {
   position: fixed;
   display: none;
-  width: 100%;
+  width: 90%;
+  margin: auto;
   height: 10vh;
   text-align: center;
   font-size: 2rem;
