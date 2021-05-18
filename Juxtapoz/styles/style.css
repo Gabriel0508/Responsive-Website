@@ -140,7 +140,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: url(../Images/home-page.jpg);
+  background: url("https://images.unsplash.com/photo-1611095788646-86737a001141?ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxMTF8fHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
   background-size: cover;
   height: 100vh;
 }
@@ -148,7 +148,7 @@
 input[type=text] {
   position: fixed;
   display: none;
-  width: 90%;
+  width: 100%;
   margin: auto;
   height: 10vh;
   text-align: center;
