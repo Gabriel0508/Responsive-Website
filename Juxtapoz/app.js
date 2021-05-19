@@ -32,9 +32,13 @@ $(window).on("scroll", function(){
     $(".nav-container").css("height", "8vh");
     $(".big-title").css("fontSize", "2rem");
     $(".sm-title").css("fontSize", ".5rem");
+    $(".nav-container").css("justify-content", "space-between");
+
   }else{
     $(".navbar").css("height","24vh")
+    $(".navbar").css("background","none")
     $(".nav-container").css("height", "24vh");
+    $(".nav-container").css("justify-content", "space-around");
     $(".big-title").css("fontSize"," 6rem");
     $(".sm-title").css("fontSize", "2rem");
   };

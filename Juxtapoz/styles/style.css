@@ -13,8 +13,9 @@
   display: -ms-flexbox;
   display: flex;
   z-index: 1;
-  -webkit-transition: .25s ease-in-out;
-  transition: .25s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  background: #fff;
 }
 
 .navbar .nav-container {
@@ -32,8 +33,9 @@
           align-items: center;
   z-index: 1;
   border-bottom: 5px solid #111;
-  -webkit-transition: .25s ease-in-out;
-  transition: .25s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  background: #fff;
 }
 
 .navbar .side-menu {
@@ -57,8 +59,8 @@
   text-transform: uppercase;
   color: #000000;
   font-family: sans-serif;
-  -webkit-transition: .25s ease-in-out;
-  transition: .25s ease-in-out;
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
 
 .navbar .logo .sm-title {
@@ -66,8 +68,8 @@
   text-decoration: none;
   color: #adb5bd;
   text-align: center;
-  -webkit-transition: .25s ease-in-out;
-  transition: .25s ease-in-out;
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
 
 .navbar .search {
@@ -159,5 +161,9 @@ input[type=text] {
   border-left: none;
   border-right: none;
   outline: none;
+}
+
+.content {
+  height: 900px;
 }
 /*# sourceMappingURL=style.css.map */
