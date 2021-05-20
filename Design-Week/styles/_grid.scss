@@ -19,3 +19,16 @@
         }
     }
 }
+@media (max-width: 700px) {
+    .home{
+        .grid-container{
+            display: block;
+            .grid-item img {
+                margin: .5rem;
+                &:hover{
+                    transform: none;
+                }
+            }
+        }
+    }
+}

@@ -87,7 +87,14 @@ $dark:#000000;
 }
 
 @media (max-width: 1140px) {
-    .nav-links{
-        display: none;
+    .navbar{
+        .nav-container{
+            justify-content: space-around;
+            .all{
+                .nav-links{
+                    display: none;
+                }
+            }
+        }
     }
 }

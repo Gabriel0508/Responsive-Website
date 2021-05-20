@@ -41,3 +41,19 @@
     }
 }
 }
+
+@media(max-width:800px) {
+    .footer{
+        .footer-container{
+            justify-content: center;
+            .footer-links{
+                a{
+                    font-size: 1rem;
+                }
+            }
+            .footer-icons{
+                display: none;
+            }
+        }
+    }
+}

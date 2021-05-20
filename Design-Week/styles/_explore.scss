@@ -75,3 +75,14 @@
     }
   }
 }
+
+@media (max-width:800px){
+  .explore{
+    display: block;
+    .explore-container{
+      width: 100%;
+      display: block;
+      justify-content: center;
+    }
+  }
+}
