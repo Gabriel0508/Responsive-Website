@@ -4,7 +4,7 @@
   margin: auto;
   display: flex;
   z-index: 1;
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
   background: #fff;
 
   .nav-container {
@@ -17,9 +17,8 @@
     align-items: center;
     z-index: 1;
     border-bottom: 5px solid #111;
-    transition: .5s ease-in-out;
+    transition: 0.5s ease-in-out;
     background: #fff;
-
   }
   .side-menu {
     font-size: 2rem;
@@ -67,3 +66,15 @@
   }
 }
 
+@media (max-width: 800px) {
+  .navbar {
+    width: 100%;
+    .nav-container {
+      width: 100%;
+
+      .big-title {
+        font-size: 2rem;
+      }
+    }
+  }
+}
