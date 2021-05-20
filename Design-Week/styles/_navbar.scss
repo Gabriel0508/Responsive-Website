@@ -82,5 +82,12 @@ $dark:#000000;
                 }
             }
         }
+        
+    }
+}
+
+@media (max-width: 1140px) {
+    .nav-links{
+        display: none;
     }
 }
